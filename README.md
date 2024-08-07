@@ -22,13 +22,14 @@ model = AutoModelForSequenceClassification.from_pretrained(model_name)
 ```
 
 ## All models on huggingface
-|    Name    | `aaronfeller.`     | Dataset | Description
-| Pretrained PeptideCLM | `PeptideCLM-23.4M-all` | PubChem + SureChEMBL + SmProt + RandPept | Fully pretrained PeptideCLM which performed best in finetuning on the downstream task of predicting peptide membrane penetration. |
-|            | `PeptideCLM-12.6M-smol` | PubChem + SureChEMBL | PeptideCLM trained on the small molecule portion of pretraining data. |
-|            | `PeptideCLM-10.8M-pep` | SmProt + RandPept | PeptideCLM trained on the peptide portion of pretraining data. |
-| Finetuned PeptideCLM |  `PeptideCLM-23.4M-CycPeptMPDB-fold-1` | CycPeptMPDB | Five models below are finetuned on a subset of PAMPA data from CycPeptMPDB with 5-fold cross validation on k-means clustered embeddings. |
-|                      |  `PeptideCLM-23.4M-CycPeptMPDB-fold-2` | | |
-|                      |  `PeptideCLM-23.4M-CycPeptMPDB-fold-3` | | |
-|                      |  `PeptideCLM-23.4M-CycPeptMPDB-fold-4` | | |
-|                      |  `PeptideCLM-23.4M-CycPeptMPDB-fold-5` | | |
+| Name                     | `aaronfeller.`                 | Dataset                            | Description                                                                                                               |
+|--------------------------|--------------------------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Pretrained PeptideCLM    | `PeptideCLM-23.4M-all`         | PubChem + SureChEMBL + SmProt + RandPept | Fully pretrained PeptideCLM which performed best in finetuning on the downstream task of predicting peptide membrane penetration. |
+|                          | `PeptideCLM-12.6M-smol`        | PubChem + SureChEMBL               | PeptideCLM trained on the small molecule portion of pretraining data.                                                     |
+|                          | `PeptideCLM-10.8M-pep`         | SmProt + RandPept                  | PeptideCLM trained on the peptide portion of pretraining data.                                                            |
+| Finetuned PeptideCLM     | `PeptideCLM-23.4M-CycPeptMPDB-fold-1` | CycPeptMPDB                        | Five models below are finetuned on a subset of PAMPA data from CycPeptMPDB with 5-fold cross validation on k-means clustered embeddings. |
+|                          | `PeptideCLM-23.4M-CycPeptMPDB-fold-2` |                                    |                                                                                                                           |
+|                          | `PeptideCLM-23.4M-CycPeptMPDB-fold-3` |                                    |                                                                                                                           |
+|                          | `PeptideCLM-23.4M-CycPeptMPDB-fold-4` |                                    |                                                                                                                           |
+|                          | `PeptideCLM-23.4M-CycPeptMPDB-fold-5` |                                    |                                                                                                                           |
 
