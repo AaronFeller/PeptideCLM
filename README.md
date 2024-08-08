@@ -3,10 +3,10 @@
 ## Introduction
 
 PeptideCLM-23.4M is a peptide-specific pretrained chemical language model published in [future publication]. 
-The base model was pretrained with masked language modeling on 23.4 million molecules, divided approximately into two halves: small molecules and peptides.
+The base model was pretrained with masked language modeling on 23 million molecules, divided approximately into two halves: 12M small molecules and 11M peptides.
 Finetuned models are trained to predict membrane penetration for cyclic peptides from CycPeptMPDB.
 
-This repository contains some example code for loading pre-trained weights and notebooks with analysis conducted for assessment of the model. 
+This repository contains some example code for loading pre-trained weights, which include a Jupyter notebook example of model assessment and a python script for finetuning the pretrained model. 
 
 ## Models
 Required libraries for loading this model include the Transformers library with its dependencies (PyTorch, etc.) and the tokenizer library SmilesPE along with its dependencies.
