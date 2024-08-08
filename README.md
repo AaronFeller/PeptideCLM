@@ -76,7 +76,7 @@ I attempted to port my custom tokenizer to HuggingFace, but was unable to. If an
 
 The pretraining dataset for the large model (23M) can be downloaded here: https://utexas.box.com/v/PeptideCLM-pretraining-data.
 
-A curated dataset of PAMPA results from CycPeptMPDB is contained in the directory `datasets/kmeans_regression` and has been split into 5 subsets 
+A curated dataset of PAMPA results from CycPeptMPDB is contained in the directory `datasets/kmeans_regression` and has been split into 5 training and test subsets (numbered) and a separate file for validation.
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
