@@ -4,6 +4,18 @@ This work was developed in the [Wilke lab](https://wilkelab.org/) by Aaron Felle
 Our support came from NIH grant 1R01 AI148419. Principle investigator C.O.W. was also supported by the Blumberg Centennial Professorship in Molecular Evolution and the Reeder Centennial Fellowship in Systematic and Evolutionary Biology at The University of Texas at Austin.
 Computational analyses were performed using the Biomedical Research Computing Facility at UT Austin, Center for Biomedical Research Support. RRID: SCR_021979. The authors thank [Luiz Vieira](https://github.com/ziul-bio) for support and discussions on the topic of language model pretraining and finetuning.
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Finetuning](#finetuning)
+- [Models](#models)
+- [Tokenizer](#tokenizer)
+- [Datasets](#datasets)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Introduction
 
 PeptideCLM-23M is a peptide-specific pretrained chemical language model published in [future publication]. 
