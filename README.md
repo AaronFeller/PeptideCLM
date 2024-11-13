@@ -54,13 +54,8 @@ Required libraries for loading this model include the Transformers library with 
 | Model name              | Training dataset                                          | Description                                                                                                               |
 |-----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | `PeptideCLM-23M-all`         | PubChem + SureChEMBL + SmProt + RandPept | Fully pretrained PeptideCLM which performed best in finetuning on the downstream task of predicting peptide membrane penetration. |
-| `PeptideCLM-12M-smol`        | PubChem + SureChEMBL                     | PeptideCLM pretrained on the small molecule portion of pretraining data. |
 | `PeptideCLM-11M-pep`         | SmProt + RandPept                        | PeptideCLM pretrained on the peptide portion of pretraining data. |
-| `PeptideCLM-23M-CycPeptMPDB-fold-1` | Finetuning: CycPeptMPDB | PeptideCLM-all finetuned on CycPeptMPDB PAMPA data, fold 1. |
-| `PeptideCLM-23M-CycPeptMPDB-fold-2` | Finetuning: CycPeptMPDB | PeptideCLM-all finetuned on CycPeptMPDB PAMPA data, fold 2. |
-| `PeptideCLM-23M-CycPeptMPDB-fold-3` | Finetuning: CycPeptMPDB | PeptideCLM-all finetuned on CycPeptMPDB PAMPA data, fold 3. |
-| `PeptideCLM-23M-CycPeptMPDB-fold-4` | Finetuning: CycPeptMPDB | PeptideCLM-all finetuned on CycPeptMPDB PAMPA data, fold 4. |
-| `PeptideCLM-23M-CycPeptMPDB-fold-5` | Finetuning: CycPeptMPDB | PeptideCLM-all finetuned on CycPeptMPDB PAMPA data, fold 5. |
+| `PeptideCLM-12M-smol`        | PubChem + SureChEMBL                     | PeptideCLM pretrained on the small molecule portion of pretraining data. |
 
 
 All models hosted on huggingface can be loaded from [huggingface.co/aaronfeller](https://huggingface.co/aaronfeller).
@@ -76,7 +71,7 @@ I attempted to port my custom tokenizer to HuggingFace, but was unable to. If an
 
 The pretraining dataset for the large model (23M) can be downloaded here: https://utexas.box.com/v/PeptideCLM-pretraining-data.
 
-A curated dataset of PAMPA results from CycPeptMPDB is contained in the directory `datasets/kmeans_regression` and has been split into 5 training and test subsets (numbered) and a separate file for validation.
+The clustered dataset of cyclic peptides analyzed with PAMPA from CycPeptMPDB is contained in the directory `clustered_data` with SMILES, permeability (PAMPA), and cluster number.
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
