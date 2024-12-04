@@ -4,13 +4,10 @@ from datasets import Dataset
 from tokenizer.my_tokenizers import SMILES_SPE_Tokenizer
 
 # Load the data
-test_df = pd.read_csv('training_data/kmeans_regression/test_1.csv')
+data = pd.concat('clustered_data/all_clusters.csv')
 
-train_2 = pd.read_csv('training_data/kmeans_regression/train_2.csv')
-train_3 = pd.read_csv('training_data/kmeans_regression/train_3.csv')
-train_4 = pd.read_csv('training_data/kmeans_regression/train_4.csv')
-train_5 = pd.read_csv('training_data/kmeans_regression/train_5.csv')
-train_df = pd.concat([train_2, train_3, train_4, train_5], ignore_index=True)
+train_df = data[data['cluster'] != 1]
+test_df = data[data['cluster'] == 1]
 
 # Print column names to ensure the correct name is used
 print("Train dataset columns:", train_df.columns)
@@ -21,7 +18,7 @@ train_dataset = Dataset.from_pandas(train_df)
 test_dataset = Dataset.from_pandas(test_df)
 
 # Load the tokenizer and model
-model_name = 'aaronfeller/PeptideCLM-23.4M-all'  # Replace with your model of choice
+model_name = 'aaronfeller/PeptideCLM-23M-all'  # Replace with your model of choice
 tokenizer = SMILES_SPE_Tokenizer('tokenizer/new_vocab.txt', 'tokenizer/new_splits.txt')
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=1)
 
@@ -46,7 +43,7 @@ training_args = TrainingArguments(
     warmup_steps=0,                   # Number of warmup steps
     weight_decay=0.01,                # Strength of weight decay
     logging_dir='./logs',             # Directory for storing logs
-    logging_steps=10,
+    logging_steps=10,                 # Log every 10 steps
     evaluation_strategy="epoch",      # Evaluate every epoch
 )
 
