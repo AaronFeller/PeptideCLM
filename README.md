@@ -69,7 +69,9 @@ I attempted to port my custom tokenizer to HuggingFace, but was unable to. If an
 
 ## Datasets
 
-The pretraining dataset for the large model (23M) can be downloaded here: https://utexas.box.com/v/PeptideCLM-pretraining-data.
+The pretraining dataset for the large model (23M) can be downloaded here: https://zenodo.org/records/15042141. 
+
+**UPDATE** -- This record has two versions, the v1.1 has been corrected and should be used for any pretraining tasks. The first version had an issue with cyclization and the generated peptides did not have correct numbering for ring closure. All molecules should now be convertible to mol files with RDKit.
 
 The clustered dataset of cyclic peptides analyzed with PAMPA from CycPeptMPDB is contained in the directory `clustered_data` with SMILES, permeability (PAMPA), and cluster number.
 
