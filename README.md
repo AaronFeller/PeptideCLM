@@ -1,4 +1,4 @@
-Update note: PeptideCLM-2 has been released! It was built with improved architecture, expanded training data, and additional evaluations. The new model(s) have improved performance on evaluations. For downstream use, we suggest using the new model: [repository](https://github.com/AaronFeller/PeptideCLM-2), [model weights](https://huggingface.co/collections/aaronfeller/peptideclm-2), and [manuscript](https://doi.org/10.1021/acs.jcim.6c00652) ([open access](https://www.biorxiv.org/content/10.64898/2026.01.06.697994v5)).
+Update note: PeptideCLM-2 has been released! It was built with improved architecture, expanded training data, and additional evaluations. The new model(s) have improved performance on evaluations. For downstream use, we suggest using the new model: [repository](https://github.com/AaronFeller/PeptideCLM-2), [model weights](https://huggingface.co/collections/aaronfeller/peptideclm-2), and [manuscript](https://doi.org/10.1021/acs.jcim.6c00652) ([preprint](https://www.biorxiv.org/content/10.64898/2026.01.06.697994v5)).
 
 ---
 # PeptideCLM
